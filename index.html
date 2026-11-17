@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO // LIQUID MOTION</title>
+  <!-- Y2K・モーショングラフィックス風フォントの読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Noto+Sans+JP:wght@500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 背景でうねる3つの純青リキッドシェイプ -->
+  <div class="liquid-layer" aria-hidden="true">
+    <div class="blob blob-left"></div>
+    <div class="blob blob-top-right"></div>
+    <div class="blob blob-bottom-right"></div>
+  </div>
+
+  <!-- 上部ステータスバー（編集ソフトのUI風） -->
+  <header class="hud-header">
+    <div class="hud-left">
+      <span class="rec-dot"></span>
+      <span>REC // 60FPS</span>
+    </div>
+    <nav class="hud-nav">
+      <a href="#works">WORKS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <div class="hud-right">RGB(0, 0, 255)</div>
+  </header>
+
+  <main>
+    <!-- ヒーローセクション（中央モチーフ＋重なるタイポグラフィ） -->
+    <section class="hero">
+      <div class="hero-stage">
+        <!--
+          【画像の差し替え方法】
+          下の <div class="chrome-sculpture"> を消して、
+          背景を切り抜いた透過PNG画像（彫刻や自作3DCGなど）を入れると画像と同じ表現になります。
+          例: <img src="statue.png" alt="Main Visual" class="hero-cutout">
+        -->
+        <div class="chrome-sculpture">
+          <span>3D / OBJECT<br>PLACEHOLDER</span>
+        </div>
+
+        <!-- モチーフの上に重なる純青タイトル -->
+        <h1 class="hero-title">LIQUID</h1>
+        <p class="hero-sub">MOTION GRAPHICS &amp; VISUAL DESIGN PORTFOLIO</p>
+      </div>
+    </section>
+
+    <!-- 無限スクロールするティッカー（帯） -->
+    <div class="marquee-bar">
+      <div class="marquee-track">
+        <span>MOTION GRAPHICS // Y2K AESTHETIC // PURE BLUE 0000FF // 3D VISUALS // TYPOGRAPHY //&nbsp;</span>
+        <span>MOTION GRAPHICS // Y2K AESTHETIC // PURE BLUE 0000FF // 3D VISUALS // TYPOGRAPHY //&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- 作品一覧セクション -->
+    <section id="works" class="section">
+      <div class="section-header">
+        <h2>01 / SELECTED WORKS</h2>
+        <span>[ ARCHIVE 2025-2026 ]</span>
+      </div>
+
+      <div class="works-grid">
+        <!-- 作品カード 1 -->
+        <article class="work-card">
+          <div class="work-thumb">
+            <!-- 作品サムネイルを入れる場合は <img src="work1.jpg" alt="Work 1"> -->
+            <div class="thumb-placeholder">MOV_001.MP4</div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">MOTION / 3DCG</span>
+            <h3>KINETIC TYPE REEL</h3>
+            <p>After EffectsとBlenderを使用したタイポグラフィ・アニメーション作品。</p>
+          </div>
+        </article>
+
+        <!-- 作品カード 2 -->
+        <article class="work-card">
+          <div class="work-thumb">
+            <div class="thumb-placeholder">MOV_002.MP4</div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">VISUAL / Y2K</span>
+            <h3>CYBER LIQUID STUDY</h3>
+            <p>流体シミュレーションとクローム質感を組み合わせたループ映像。</p>
+          </div>
+        </article>
+
+        <!-- 作品カード 3 -->
+        <article class="work-card">
+          <div class="work-thumb">
+            <div class="thumb-placeholder">IMG_003.PNG</div>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">GRAPHIC DESIGN</span>
+            <h3>ABSTRACT POSTER SERIES</h3>
+            <p>純青とグリッドレイアウトで構成したグラフィックポスター。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- プロフィールセクション -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2>02 / PROFILE &amp; TOOLS</h2>
+        <span>[ SYSTEM INFO ]</span>
+      </div>
+
+      <div class="about-box">
+        <div class="about-text">
+          <h3>YOUR NAME / CREATOR</h3>
+          <p>
+            モーショングラフィックス・映像制作を中心に活動しています。
+            Y2Kカルチャーやデジタルコラージュの質感をベースに、視覚的なインパクトのある表現を制作します。
+          </p>
+        </div>
+        <div class="about-skills">
+          <h4>SOFTWARE / SKILLS</h4>
+          <ul>
+            <li>AFTER EFFECTS</li>
+            <li>BLENDER / C4D</li>
+            <li>PREMIERE PRO</li>
+            <li>PHOTOSHOP / ILLUSTRATOR</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- コンタクト・SNSリンク -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <h2>03 / CONTACT</h2>
+        <span>[ CONNECT ]</span>
+      </div>
+      <div class="contact-links">
+        <a href="#" target="_blank" rel="noopener">X (TWITTER) ↗</a>
+        <a href="#" target="_blank" rel="noopener">INSTAGRAM ↗</a>
+        <a href="#" target="_blank" rel="noopener">YOUTUBE / VIMEO ↗</a>
+        <a href="mailto:yourname@example.com">EMAIL ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 YOUR NAME. RENDERED IN PURE BLUE RGB(0,0,255).</p>
+  </footer>
+
+</body>
+</html>
